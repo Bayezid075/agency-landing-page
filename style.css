@@ -5,15 +5,17 @@ body {
   box-sizing: border-box;
 }
 .hero-section {
-  height: 80vh;
+  height: 75vh;
   background: rgba(255, 165, 2, 0.5);
+  display: flex;
+  flex-direction: column;
 }
 .up {
   display: flex;
   justify-content: space-around;
   height: 80px;
-
   align-items: center;
+  flex: 1;
 }
 .nav-items > ul {
   display: flex;
@@ -49,4 +51,55 @@ body {
   color: white;
   border: none;
   cursor: pointer;
+}
+.bottom {
+  flex: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom > * {
+  margin: 0px 100px;
+}
+.text-chunk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-chunk {
+}
+.text-chunk > h1 {
+  color: #373f41;
+
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0.2px;
+  width: 500px;
+}
+.text-chunk > p {
+  color: #5c6264;
+  text-align: justify;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  width: 500px;
+}
+.text-chunk > button {
+  align-self: flex-start;
+  width: Hug(111px);
+  height: Hug(42px);
+  top: 522px;
+  left: 762px;
+  padding: 12px 18px 12px 18px;
+  border: 1px;
+  background: #ffd280;
+  border: 1px solid #f73c6b;
+  color: #f73c6b;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
 }
